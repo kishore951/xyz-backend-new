@@ -12,33 +12,32 @@ public class StudentModel {
     @GeneratedValue
 
     private int id;
-    private String Name;
-    private int RollNo;
-    private int AdmissionNo;
-    private String College;
+    private String name;
+    private int rollNo;
+    private int admissionNo;
+    private String college;
     private String department;
-    private String BloodGroup;
-    private int DOB;
-    private String ParentName;
-    private String ParentEmailId;
-    private String GuardianAddress;
-
-
-    public StudentModel(int id, String name, int rollNo, int admissionNo, String college, String department, String bloodGroup, int DOB, String parentName, String parentEmailId, String guardianAddress) {
-        this.id = id;
-        Name = name;
-        RollNo = rollNo;
-        AdmissionNo = admissionNo;
-        College = college;
-        this.department = department;
-        BloodGroup = bloodGroup;
-        this.DOB = DOB;
-        ParentName = parentName;
-        ParentEmailId = parentEmailId;
-        GuardianAddress = guardianAddress;
-    }
+    private String bloodGroup;
+    private String dOB;
+    private String parentName;
+    private String parentEmailId;
+    private String guardianAddress;
 
     public StudentModel() {
+    }
+
+    public StudentModel(int id, String name, int rollNo, int admissionNo, String college, String department, String bloodGroup, String dOB, String parentName, String parentEmailId, String guardianAddress) {
+        this.id = id;
+        this.name = name;
+        this.rollNo = rollNo;
+        this.admissionNo = admissionNo;
+        this.college = college;
+        this.department = department;
+        this.bloodGroup = bloodGroup;
+        this.dOB = dOB;
+        this.parentName = parentName;
+        this.parentEmailId = parentEmailId;
+        this.guardianAddress = guardianAddress;
     }
 
     public int getId() {
@@ -50,35 +49,35 @@ public class StudentModel {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public int getRollNo() {
-        return RollNo;
+        return rollNo;
     }
 
     public void setRollNo(int rollNo) {
-        RollNo = rollNo;
+        this.rollNo = rollNo;
     }
 
     public int getAdmissionNo() {
-        return AdmissionNo;
+        return admissionNo;
     }
 
     public void setAdmissionNo(int admissionNo) {
-        AdmissionNo = admissionNo;
+        this.admissionNo = admissionNo;
     }
 
     public String getCollege() {
-        return College;
+        return college;
     }
 
     public void setCollege(String college) {
-        College = college;
+        this.college = college;
     }
 
     public String getDepartment() {
@@ -90,42 +89,42 @@ public class StudentModel {
     }
 
     public String getBloodGroup() {
-        return BloodGroup;
+        return bloodGroup;
     }
 
     public void setBloodGroup(String bloodGroup) {
-        BloodGroup = bloodGroup;
+        this.bloodGroup = bloodGroup;
     }
 
-    public int getDOB() {
-        return DOB;
+    public String getdOB() {
+        return dOB;
     }
 
-    public void setDOB(int DOB) {
-        this.DOB = DOB;
+    public void setdOB(String dOB) {
+        this.dOB = dOB;
     }
 
     public String getParentName() {
-        return ParentName;
+        return parentName;
     }
 
     public void setParentName(String parentName) {
-        ParentName = parentName;
+        this.parentName = parentName;
     }
 
     public String getParentEmailId() {
-        return ParentEmailId;
+        return parentEmailId;
     }
 
     public void setParentEmailId(String parentEmailId) {
-        ParentEmailId = parentEmailId;
+        this.parentEmailId = parentEmailId;
     }
 
     public String getGuardianAddress() {
-        return GuardianAddress;
+        return guardianAddress;
     }
 
     public void setGuardianAddress(String guardianAddress) {
-        GuardianAddress = guardianAddress;
+        this.guardianAddress = guardianAddress;
     }
 }
